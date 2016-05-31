@@ -43,7 +43,6 @@ module.exports.metadata =
     "cordova-plugin-battery-status": "1.1.2",
     "cordova-plugin-network-information": "1.2.1",
     "cordova-plugin-mauron85-background-geolocation": "0.9.6",
-    "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-legacy-whitelist": "1.1.1",
     "cordova-plugin-device": "1.1.2"
 };

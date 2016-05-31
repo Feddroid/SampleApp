@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
-        },
         "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
         },

@@ -63,7 +63,6 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-battery-status": "1.1.2",
     "cordova-plugin-device": "1.1.2",
     "cordova-plugin-legacy-whitelist": "1.1.1",
