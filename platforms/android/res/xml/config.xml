@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.transistorsoft.backgroundgeolocation" version="0.7.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="BackgroundGeoLocation">
+        <param name="android-package" value="com.tenforwardconsulting.cordova.bgloc.BackgroundGeolocationPlugin" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <allow-intent href="market:*" />
+    <hook src="scripts/res_android.js" type="after_prepare" />
+    <name>Cordova Background GeoLocation</name>
+    <description>
+        A minimal example of cordova BackgroundGeoLocation plugin.
+    </description>
+    <author email="chris@transistorsoft.com" href="http://transistorsoft.com">
+        Chris Scott -- Transistor Software
+    </author>
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <hook src="scripts/install_plugins.js" type="after_platform_add" />
+</widget>

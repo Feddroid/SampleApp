@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.transistorsoft.backgroundgeolocation" version="0.7.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Hello World</name>
+    <description>
+        Hello World sample application that responds to the deviceready event.
+    </description>
+    <icon src="icon.png" />
+    <feature name="Device">
+        <param name="browser-package" value="Device" />
+    </feature>
+    <name>Cordova Background GeoLocation</name>
+    <description>
+        A minimal example of cordova BackgroundGeoLocation plugin.
+    </description>
+    <author email="chris@transistorsoft.com" href="http://transistorsoft.com">
+        Chris Scott -- Transistor Software
+    </author>
+    <content src="index.html" />
+    <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <hook src="scripts/install_plugins.js" type="after_platform_add" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+</widget>

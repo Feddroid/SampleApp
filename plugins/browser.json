@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-legacy-whitelist": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-mauron85-background-geolocation": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        }
+    },
+    "dependent_plugins": {}
+}

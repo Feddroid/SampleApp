@@ -1,0 +1,110 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-legacy-whitelist": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-mauron85-background-geolocation": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+            "id": "cordova-plugin-battery-status.battery",
+            "pluginId": "cordova-plugin-battery-status",
+            "clobbers": [
+                "navigator.battery"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-battery-status/src/browser/BatteryProxy.js",
+            "id": "cordova-plugin-battery-status.Battery",
+            "pluginId": "cordova-plugin-battery-status",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+            "id": "cordova-plugin-device.DeviceProxy",
+            "pluginId": "cordova-plugin-device",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-mauron85-background-geolocation/www/backgroundGeoLocation.js",
+            "id": "cordova-plugin-mauron85-background-geolocation.backgroundGeoLocation",
+            "pluginId": "cordova-plugin-mauron85-background-geolocation",
+            "clobbers": [
+                "backgroundGeoLocation"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "id": "cordova-plugin-network-information.network",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "id": "cordova-plugin-network-information.Connection",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/src/browser/network.js",
+            "id": "cordova-plugin-network-information.NetworkInfoProxy",
+            "pluginId": "cordova-plugin-network-information",
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-battery-status": "1.1.2",
+        "cordova-plugin-device": "1.1.2",
+        "cordova-plugin-legacy-whitelist": "1.1.1",
+        "cordova-plugin-mauron85-background-geolocation": "0.9.6",
+        "cordova-plugin-network-information": "1.2.1"
+    }
+}
