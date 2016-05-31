@@ -8,7 +8,14 @@
         Chris Scott -- Transistor Software
     </author>
     <content src="index.html" />
-    <gap:plugin name="cordova-plugin-mauron85-background-geolocation" source="npm"/>
+    
+    <preference name="android-build-tool" value="gradle" />
+
+  <plugin name="cordova-plugin-console" />
+  <plugin name="cordova-plugin-device" />
+  <plugin name="cordova-plugin-splashscreen" />
+  <plugin name="cordova-plugin-whitelist" />
+  <plugin name="cordova-plugin-mauron85-background-geolocation" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

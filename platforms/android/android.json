@@ -27,6 +27,14 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -102,6 +110,15 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
         }
     },
     "dependent_plugins": {},
@@ -141,6 +158,13 @@
             "clobbers": [
                 "device"
             ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -148,6 +172,9 @@
         "cordova-plugin-network-information": "1.2.1",
         "cordova-plugin-mauron85-background-geolocation": "0.9.6",
         "cordova-plugin-legacy-whitelist": "1.1.1",
-        "cordova-plugin-device": "1.1.2"
+        "cordova-plugin-device": "1.1.2",
+        "cordova-plugin-console": "1.0.3",
+        "cordova-plugin-whitelist": "1.2.2",
+        "cordova-plugin-splashscreen": "3.2.2"
     }
 }

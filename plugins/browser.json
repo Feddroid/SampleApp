@@ -21,6 +21,15 @@
         },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.transistorsoft.backgroundgeolocation"
         }
     },
     "dependent_plugins": {}

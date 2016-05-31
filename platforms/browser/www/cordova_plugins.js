@@ -58,6 +58,20 @@ module.exports = [
         "id": "cordova-plugin-network-information.NetworkInfoProxy",
         "pluginId": "cordova-plugin-network-information",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-splashscreen/src/browser/SplashScreenProxy.js",
+        "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+        "pluginId": "cordova-plugin-splashscreen",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -67,7 +81,10 @@ module.exports.metadata =
     "cordova-plugin-device": "1.1.2",
     "cordova-plugin-legacy-whitelist": "1.1.1",
     "cordova-plugin-mauron85-background-geolocation": "0.9.6",
-    "cordova-plugin-network-information": "1.2.1"
+    "cordova-plugin-network-information": "1.2.1",
+    "cordova-plugin-console": "1.0.3",
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-plugin-splashscreen": "3.2.2"
 }
 // BOTTOM OF METADATA
 });
